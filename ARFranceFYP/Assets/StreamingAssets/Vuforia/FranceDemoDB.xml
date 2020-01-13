@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="queen-clubs" size="1.000000 1.538576" />
+    <ImageTarget name="1200px-01_of_spades_A" size="1.000000 1.456667" />
+    <ImageTarget name="Flag_of_France" size="1.000000 0.666500" />
+    <ImageTarget name="joker_card" size="1.000000 1.518841" />
+  </Tracking>
+</QCARConfig>
