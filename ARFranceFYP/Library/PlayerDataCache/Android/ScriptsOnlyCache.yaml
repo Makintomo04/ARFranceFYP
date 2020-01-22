@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - GameManager
     - ObjectSelect
+    - ShowInfo
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
@@ -51,21 +52,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 13600}
+      Script: {instanceID: 11202}
     - Class: 114
-      Script: {instanceID: 13796}
+      Script: {instanceID: 11404}
     - Class: 114
-      Script: {instanceID: 14176}
+      Script: {instanceID: 11790}
     - Class: 114
-      Script: {instanceID: 14310}
+      Script: {instanceID: 11930}
     - Class: 114
-      Script: {instanceID: 14724}
+      Script: {instanceID: 12088}
     - Class: 114
-      Script: {instanceID: 15180}
+      Script: {instanceID: 12360}
     - Class: 114
-      Script: {instanceID: 15594}
+      Script: {instanceID: 12838}
     - Class: 114
-      Script: {instanceID: 48230}
+      Script: {instanceID: 13264}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -104,29 +105,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 13600}
+      Script: {instanceID: 11202}
     - Class: 114
-      Script: {instanceID: 13756}
+      Script: {instanceID: 11364}
     - Class: 114
-      Script: {instanceID: 13796}
+      Script: {instanceID: 11404}
     - Class: 114
-      Script: {instanceID: 14070}
+      Script: {instanceID: 11684}
     - Class: 114
-      Script: {instanceID: 14176}
+      Script: {instanceID: 11790}
     - Class: 114
-      Script: {instanceID: 14278}
+      Script: {instanceID: 11898}
     - Class: 114
-      Script: {instanceID: 14300}
+      Script: {instanceID: 11920}
     - Class: 114
-      Script: {instanceID: 14308}
+      Script: {instanceID: 11928}
     - Class: 114
-      Script: {instanceID: 14906}
+      Script: {instanceID: 12360}
     - Class: 114
-      Script: {instanceID: 15180}
+      Script: {instanceID: 12550}
     - Class: 114
-      Script: {instanceID: 15274}
+      Script: {instanceID: 12838}
     - Class: 114
-      Script: {instanceID: 15594}
+      Script: {instanceID: 12934}
+    - Class: 114
+      Script: {instanceID: 12936}
+    - Class: 114
+      Script: {instanceID: 13264}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -134,6 +139,8 @@ ScriptsOnlyBuild:
     - Class: 136
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -738,6 +745,12 @@ ScriptsOnlyBuild:
     className: WireframeTrackableEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -880,6 +893,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ObjectSelect
+  - hash:
+      serializedVersion: 2
+      Hash: 9f54e90afea28775ebea5ef289593867
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShowInfo
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -1384,12 +1403,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameManager
   platform: 13
   scenePathNames:
   - Assets/Scenes/menu screen.unity

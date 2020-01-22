@@ -48,6 +48,7 @@ public class ObjectSelect : MonoBehaviour
             {
                 labelBG.SetActive(true);
                 label.text = hit.transform.name.ToString();
+               
             }
             else
             {
