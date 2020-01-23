@@ -9,6 +9,8 @@ public class ShowInfo : MonoBehaviour
   //  public GameObject Info2;
   //  public GameObject InfoBG;
     public GameObject Panel;
+    public GameObject Panel2;
+    public ObjectSelect OSRef;
     //public GameObject Label;
     //bool isClicked;
 
@@ -28,11 +30,26 @@ public class ShowInfo : MonoBehaviour
     public void OpenPanel()
     {
         
-   if(Panel != null)
+   if(Panel != null&& OSRef.selectNo==1)
         {
+            if (Panel2.activeSelf == true)
+            {
+                Panel2.SetActive(false);
+            }
             Panel.SetActive(true);
+
+            Debug.Log("ET");
         }
-        
+        else if (Panel2 != null && OSRef.selectNo == 2)
+        {
+            if (Panel.activeSelf == true)
+            {
+                Panel.SetActive(false);
+            }
+            Panel2.SetActive(true);
+            Debug.Log("ND");
+        }
+
         //InfoBG.SetActive(true);
         //Info.SetActive(true);
         //isClicked = true;
@@ -53,7 +70,14 @@ public class ShowInfo : MonoBehaviour
     }
     public void ExitPanel()
     {
-        Panel.SetActive(false);
+        if (Panel.activeSelf == true)
+        {
+            Panel.SetActive(false);
+        }
+        else if(Panel2.activeSelf == true)
+        {
+            Panel2.SetActive(false);
+        }
     }
     // Update is called once per frame
     void Update()
