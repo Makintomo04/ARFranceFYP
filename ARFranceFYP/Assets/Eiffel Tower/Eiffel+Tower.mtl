@@ -1,0 +1,82 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl Color_006
+Ka 0.000000 0.000000 0.000000
+Kd 0.282353 0.349020 0.486275
+Ks 0.330000 0.330000 0.330000
+map_Kd Eiffel+Tower/Color_006.jpg
+
+newmtl _2
+Ka 0.000000 0.000000 0.000000
+Kd 0.200000 0.176471 0.145098
+Ks 0.330000 0.330000 0.330000
+map_Kd Eiffel+Tower/_2.jpg
+
+newmtl Google_Earth_Snapshot_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.364706 0.415686 0.415686
+Ks 0.330000 0.330000 0.330000
+map_Kd Eiffel+Tower/Google_Earth_Snapshot_1.jpg
+
+newmtl Color_002
+Ka 0.000000 0.000000 0.000000
+Kd 0.341176 0.450980 0.525490
+Ks 0.330000 0.330000 0.330000
+map_Kd Eiffel+Tower/Color_002.jpg
+
+newmtl _1
+Ka 0.000000 0.000000 0.000000
+Kd 0.576471 0.513725 0.423529
+Ks 0.330000 0.330000 0.330000
+map_Kd Eiffel+Tower/_1.jpg
+
+newmtl _4
+Ka 0.000000 0.000000 0.000000
+Kd 0.356863 0.313725 0.258824
+Ks 0.330000 0.330000 0.330000
+map_Kd Eiffel+Tower/_4.jpg
+
+newmtl Asphalt_New
+Ka 0.000000 0.000000 0.000000
+Kd 0.705882 0.627451 0.517647
+Ks 0.330000 0.330000 0.330000
+map_Kd Eiffel+Tower/Asphalt_New.jpg
+
+newmtl _3
+Ka 0.000000 0.000000 0.000000
+Kd 0.266667 0.235294 0.192157
+Ks 0.330000 0.330000 0.330000
+map_Kd Eiffel+Tower/_3.jpg
+
+newmtl _7
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.330000 0.330000 0.330000
+map_Kd Eiffel+Tower/_7.jpg
+
+newmtl Brick_Basket_Two
+Ka 0.000000 0.000000 0.000000
+Kd 0.341176 0.360784 0.364706
+Ks 0.330000 0.330000 0.330000
+map_Kd Eiffel+Tower/Brick_Basket_Two.jpg
+
+newmtl M_01
+Ka 0.000000 0.000000 0.000000
+Kd 0.490196 0.490196 0.423529
+Ks 0.330000 0.330000 0.330000
+map_Kd Eiffel+Tower/M_01.jpg
+
+newmtl Brick_Antique
+Ka 0.000000 0.000000 0.000000
+Kd 0.400000 0.364706 0.329412
+Ks 0.330000 0.330000 0.330000
+map_Kd Eiffel+Tower/Brick_Antique.jpg
+
+newmtl _6
+Ka 0.000000 0.000000 0.000000
+Kd 0.400000 0.364706 0.329412
+Ks 0.330000 0.330000 0.330000
+map_Kd Eiffel+Tower/_6.jpg
+

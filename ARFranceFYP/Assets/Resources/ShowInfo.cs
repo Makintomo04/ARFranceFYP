@@ -49,6 +49,17 @@ public class ShowInfo : MonoBehaviour
             Panel2.SetActive(true);
             Debug.Log("ND");
         }
+   else if(Panel != null && Panel2 != null && OSRef.selectNo == 0){
+            if (Panel.activeSelf == true)
+            {
+                Panel.SetActive(false);
+            }
+            if (Panel2.activeSelf == true)
+            {
+                Panel2.SetActive(false);
+            }
+            Debug.Log("Nothing Selected");
+        }
 
         //InfoBG.SetActive(true);
         //Info.SetActive(true);

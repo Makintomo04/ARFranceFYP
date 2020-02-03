@@ -76,9 +76,11 @@ public class ObjectSelect : MonoBehaviour
                     selectNo = 2;
                     Debug.Log("ND");
                 }
+                
             }
             else
             {
+                selectNo = 0;
                 labelBG.SetActive(false);
                 label.text = "";
             }
