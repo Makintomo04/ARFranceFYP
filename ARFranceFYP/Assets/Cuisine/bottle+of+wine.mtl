@@ -1,0 +1,33 @@
+newmtl bottle_of_wine:Color_A11
+illum 4
+Kd 0.26 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 0.31 0.31 0.31
+Ni 1.00
+Ks 0.33 0.33 0.33
+Ns 0.06
+newmtl bottle_of_wine:Color_A16
+illum 4
+Kd 0.40 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.33 0.33 0.33
+Ns 0.06
+newmtl bottle_of_wine:Translucent_Glass_Green_Dark
+illum 4
+Kd 0.06 0.12 0.01
+Ka 0.00 0.00 0.00
+Tf 0.99 0.99 0.99
+Ni 1.00
+Ks 0.33 0.33 0.33
+Ns 0.06
+newmtl bottle_of_wine:drop_result_1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd drop_result_1.jpg
+Ni 1.00
+Ks 0.33 0.33 0.33
+Ns 0.06

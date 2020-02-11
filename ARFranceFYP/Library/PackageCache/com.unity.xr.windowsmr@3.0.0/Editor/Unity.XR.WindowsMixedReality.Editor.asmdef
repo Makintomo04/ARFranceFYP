@@ -1,0 +1,24 @@
+{
+    "name": "Unity.XR.WindowsMixedReality.Editor",
+    "references": [
+        "Unity.XR.WindowsMixedReality",
+        "Unity.XR.Management",
+        "Unity.XR.Management.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.xr.windowsmr",
+            "expression": "",
+            "define": "XR_PLUGIN_WINDOWSMR_EDITOR"
+        }
+    ]
+}

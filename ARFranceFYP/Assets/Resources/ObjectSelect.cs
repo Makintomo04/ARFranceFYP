@@ -76,7 +76,22 @@ public class ObjectSelect : MonoBehaviour
                     selectNo = 2;
                     Debug.Log("ND");
                 }
-                
+                else if (hit.collider.gameObject.CompareTag("Bourges"))
+                {
+                    selectNo = 3;
+                    Debug.Log("B");
+                }
+                else if (hit.collider.gameObject.CompareTag("PDG"))
+                {
+                    selectNo = 4;
+                    Debug.Log("PDG");
+                }
+                else if (hit.collider.gameObject.CompareTag("Le Mont"))
+                {
+                    selectNo = 5;
+                    Debug.Log("LM");
+                }
+
             }
             else
             {

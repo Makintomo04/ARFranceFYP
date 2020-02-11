@@ -1,0 +1,10 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl Croissant
+Ka 0.000000 0.000000 0.000000
+Kd 0.760784 0.607843 0.482353
+Ks 0.330000 0.330000 0.330000
+map_Kd Croissant/Croissant.jpg
+
