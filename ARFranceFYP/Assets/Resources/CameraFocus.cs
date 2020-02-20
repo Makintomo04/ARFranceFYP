@@ -5,7 +5,7 @@ using Vuforia;
 
 public class CameraFocus : MonoBehaviour
 {
-    private bool mVuforiaStarted = false;
+    private bool VuforiaLaunched = false;
 
     void Start()
     {
@@ -17,7 +17,7 @@ public class CameraFocus : MonoBehaviour
 
     private void StartAfterVuforia()
     {
-        mVuforiaStarted = true;
+        VuforiaLaunched = true;
         SetAutofocus();
     }
 
@@ -26,12 +26,9 @@ public class CameraFocus : MonoBehaviour
         if (!pause)
         {
             // App resumed
-            if (mVuforiaStarted)
+            if (VuforiaLaunched)
             {
-                // App resumed and vuforia already started
-                // but lets start it again...
-                SetAutofocus(); // This is done because some android devices lose the auto focus after resume
-                // this was a bug in vuforia 4 and 5. I haven't checked 6, but the code is harmless anyway
+                SetAutofocus(); 
             }
         }
     }
@@ -44,7 +41,6 @@ public class CameraFocus : MonoBehaviour
         }
         else
         {
-            // never actually seen a device that doesn't support this, but just in case
             Debug.Log("this device doesn't support auto focus");
         }
     }

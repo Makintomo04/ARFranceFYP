@@ -62,35 +62,14 @@
  <Reference Include="UnityEngine.TestRunner">
  <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
- <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="VuforiaScripts">
- <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/VuforiaScripts.dll</HintPath>
- </Reference>
- <Reference Include="VuforiaEditorScripts">
- <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/VuforiaEditorScripts.dll</HintPath>
- </Reference>
  <Reference Include="Unity.XR.Management">
  <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Subsystem.Registration">
  <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
  </Reference>
- <Reference Include="Unity.XR.Management.Editor">
- <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
+ <Reference Include="Unity.VSCode.Editor">
+ <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.ARSubsystems">
  <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/Unity.XR.ARSubsystems.dll</HintPath>
@@ -101,11 +80,32 @@
  <Reference Include="Unity.XR.InteractionSubsystems">
  <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/Unity.XR.InteractionSubsystems.dll</HintPath>
  </Reference>
+ <Reference Include="VuforiaScripts">
+ <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/VuforiaScripts.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="VuforiaEditorScripts">
+ <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/VuforiaEditorScripts.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.Management.Editor">
+ <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Rider.Editor">
+ <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.VisualStudio.Editor">
+ <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.XR.WindowsMixedReality.Editor">
  <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/Unity.XR.WindowsMixedReality.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.WindowsMixedReality">
  <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/Unity.XR.WindowsMixedReality.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.0a21/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -298,6 +298,12 @@
  </Reference>
  <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
  <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+ </Reference>
+ <Reference Include="TextMeshPro-2017.3-Editor">
+ <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="TextMeshPro-2017.3-Runtime">
+ <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Vuforia.UnityExtensions.Editor">
  <HintPath>C:/Users/Michael/Documents/GitHub/ARFranceFYP/ARFranceFYP/Library/PackageCache/com.ptc.vuforia.engine@8.6.7/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>

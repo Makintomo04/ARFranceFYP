@@ -77,7 +77,7 @@ public class ShowInfo : MonoBehaviour
             Panel2.SetActive(true);
             Debug.Log("ND");
         }*/
-        if (Panel3 != null && OSRef.selectNo==3)
+     else   if (Panel3 != null && OSRef.selectNo==3)
         {
             if (Panel.activeSelf == true)
             {
@@ -98,7 +98,7 @@ public class ShowInfo : MonoBehaviour
             Panel3.SetActive(true);
             Debug.Log("B");
         }
-        if (Panel4 != null && OSRef.selectNo==4)
+    else if (Panel4 != null && OSRef.selectNo==4)
         {
             if (Panel.activeSelf == true)
             {
@@ -119,7 +119,7 @@ public class ShowInfo : MonoBehaviour
             Panel4.SetActive(true);
             Debug.Log("PDG");
         }
-        if (Panel5 != null && OSRef.selectNo==5)
+      else if (Panel5 != null && OSRef.selectNo==5)
         {
             if (Panel.activeSelf == true)
             {
@@ -140,7 +140,7 @@ public class ShowInfo : MonoBehaviour
             Panel5.SetActive(true);
             Debug.Log("LM");
         }
-        if(Panel != null && Panel2 != null && OSRef.selectNo == 0){
+        else if(Panel != null && Panel3 != null && Panel4 != null && Panel5 != null && OSRef.selectNo == 0){
             if (Panel.activeSelf == true)
             {
                 Panel.SetActive(false);
