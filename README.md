@@ -1,1 +1,1 @@
-# ARFranceFYP
+# ExploreFranceAR
