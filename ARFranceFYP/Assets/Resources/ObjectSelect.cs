@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class ObjectSelect : MonoBehaviour
 {
-    private Text label;
-    private GameObject labelBG;
+    //private Text label;
+    //private GameObject labelBG;
     // public Text selected;
     public int selectNo;
     public string RaycastReturn;
@@ -40,99 +40,84 @@ public class ObjectSelect : MonoBehaviour
         animatorB = GameObject.Find("Bourges").GetComponent<Animator>();
         animatorPDG = GameObject.Find("Pont du Gard").GetComponent<Animator>();
         animatorLM = GameObject.Find("Le Mont Saint-Michel").GetComponent<Animator>();
-        label = GameObject.Find("LabelText").GetComponent<Text>();
-        label.text = "";
-
-        labelBG = GameObject.Find("LabelBGText");
-        labelBG.SetActive(false);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-
-
-        /* if (Input.GetMouseButtonDown(0))
-         {
-             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-             RaycastHit hit;
-             if (Physics.Raycast(ray, out hit))
-             {
-                 labelBG.SetActive(true);
-                 label.text = hit.transform.name.ToString();
-                 //  selected.text = hit.transform.name.ToString();
-                 if (hit.collider.gameObject.CompareTag("Eiffel Tower"))
-                 {
-                     if (etClicked == false)
-                     {
-                         etClicked = true;
-                         //RaycastReturn = hit.collider.gameObject.name;
-                         selectNo = 1;
-                         GameObject.FindGameObjectWithTag("Bourges").SetActive(false);
-                         GameObject.FindGameObjectWithTag("PDG").SetActive(false);
-                         GameObject.FindGameObjectWithTag("Le Mont").SetActive(false);
-                         animatorET.Play("ET Grow");
-
-                     }
-                     else if (etClicked == true)
-                     {
-                         etClicked = false;
-                         GameObject.FindGameObjectWithTag("Bourges").SetActive(true);
-                         GameObject.FindGameObjectWithTag("PDG").SetActive(true);
-                         GameObject.FindGameObjectWithTag("Le Mont").SetActive(true);
-                         animatorET.Play("ET Return");
-
-                     }
-                     Debug.Log("ET");
-                 }
-                 else if (hit.collider.gameObject.CompareTag("Notre Dame"))
-                 {
-                     selectNo = 2;
-                     Debug.Log("ND");
-                 }
-                 else if (hit.collider.gameObject.CompareTag("Bourges"))
-                 {
-                     selectNo = 3;
-                     Debug.Log("B");
-                 }
-                 else if (hit.collider.gameObject.CompareTag("PDG"))
-                 {
-                     selectNo = 4;
-                     Debug.Log("PDG");
-                 }
-                 else if (hit.collider.gameObject.CompareTag("Le Mont"))
-                 {
-                     selectNo = 5;
-                     Debug.Log("LM");
-                 }
-
-             }
-             else
-             {
-                 selectNo = 0;
-                 labelBG.SetActive(false);
-                 label.text = "";
-             }
-
-
-     }*/
-
-
-        if ((Input.GetTouch(0).phase == TouchPhase.Began) /*|| (Input.GetTouch(0).phase == TouchPhase.Stationary) || (Input.GetTouch(0).phase == TouchPhase.Moved && Input.GetTouch(0).deltaPosition.magnitude < 1.2)*/)
+        if (Input.GetMouseButtonDown(0))
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
-            RaycastHit hit;
-
-
-            if (Physics.Raycast(ray, out hit) && hit.collider.gameObject.CompareTag("Eiffel Tower") && etClicked == false)
+            Ray ray1 = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit1;
+            if (Physics.Raycast(ray1, out hit1) && hit1.collider.gameObject.CompareTag("Eiffel Tower")) /*|| (Input.GetTouch(0).phase == TouchPhase.Stationary) || (Input.GetTouch(0).phase == TouchPhase.Moved && Input.GetTouch(0).deltaPosition.magnitude < 1.2)*/
             {
-                selectNo = 1;
-                labelBG.SetActive(true);
-                label.text = hit.transform.tag;
-                //selected.text = hit.transform.name.ToString();
-                etClicked = true;
-                //RaycastReturn = hit.collider.gameObject.name;
+                if (etClicked == false)
+                {
+                    selectNo = 1;
+                    etClicked = true;
+                    foreach (GameObject go in Bourges)
+                    {
+                        if (go.activeSelf == true)
+                        {
+                            go.SetActive(false);
+                        }
+                    }
+                    foreach (GameObject go in PDG)
+                    {
+                        if (go.activeSelf == true)
+                        {
+                            go.SetActive(false);
+                        }
+                    }
+                    foreach (GameObject go in LM)
+                    {
+                        if (go.activeSelf == true)
+                        {
+                            go.SetActive(false);
+                        }
 
+                    }
+                    Debug.Log("ET");
+                    animatorET.Play("ET Grow");
+                }
+                else if (etClicked == true)
+                {
+                    etClicked = false;
+                    selectNo = 0;
+                    foreach (GameObject go in Bourges)
+                    {
+                        if (go.activeSelf == false)
+                        {
+                            go.SetActive(true);
+                        }
+                    }
+                    foreach (GameObject go in PDG)
+                    {
+                        if (go.activeSelf == false)
+                        {
+                            go.SetActive(true);
+                        }
+                    }
+                    foreach (GameObject go in LM)
+                    {
+                        if (go.activeSelf == false)
+                        {
+                            go.SetActive(true);
+                        }
+                    }
+                    animatorET.Play("ET Return");
+
+                }
+
+            }
+        }
+                    Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+        RaycastHit hit;
+        if (Input.GetTouch(0).phase == TouchPhase.Began && Physics.Raycast(ray, out hit) && hit.collider.gameObject.CompareTag("Eiffel Tower")) /*|| (Input.GetTouch(0).phase == TouchPhase.Stationary) || (Input.GetTouch(0).phase == TouchPhase.Moved && Input.GetTouch(0).deltaPosition.magnitude < 1.2)*/
+        {
+            if (etClicked == false) {
+                selectNo = 1;
+                etClicked = true;
                 foreach (GameObject go in Bourges)
                 {
                     if (go.activeSelf == true)
@@ -153,17 +138,16 @@ public class ObjectSelect : MonoBehaviour
                     {
                         go.SetActive(false);
                     }
-                    animatorET.Play("ET Grow");
 
-                    Debug.Log("ET");
                 }
+
+                Debug.Log("ET");
+                animatorET.Play("ET Grow");
             }
-            else if (Physics.Raycast(ray, out hit) && hit.collider.gameObject.CompareTag("Eiffel Tower") && etClicked == true)
+            else if (etClicked == true)
             {
                 etClicked = false;
                 selectNo = 0;
-                labelBG.SetActive(false);
-                label.text = "";
                 foreach (GameObject go in Bourges)
                 {
                     if (go.activeSelf == false)
@@ -188,10 +172,11 @@ public class ObjectSelect : MonoBehaviour
                 animatorET.Play("ET Return");
 
             }
-            if (Physics.Raycast(ray, out hit) && hit.collider.gameObject.CompareTag("Bourges") && bClicked == false)
+        }
+            
+            if (Input.GetTouch(0).phase == TouchPhase.Began && Physics.Raycast(ray, out hit) && hit.collider.gameObject.CompareTag("Bourges") && bClicked == false)
             {
                 bClicked = true;
-                //RaycastReturn = hit.collider.gameObject.name;
                 selectNo = 3;
 
                 foreach (GameObject go in ET)
@@ -215,22 +200,15 @@ public class ObjectSelect : MonoBehaviour
                         go.SetActive(false);
                     }
                 }
-
-                /*  GameObject.FindGameObjectWithTag("Eiffel Tower").SetActive(false);
-                  GameObject.FindGameObjectWithTag("PDG").SetActive(false);
-                  GameObject.FindGameObjectWithTag("Le Mont").SetActive(false);*/
                 animatorB.Play("B Grow");
 
                 Debug.Log("B");
             }
 
-            else if (Physics.Raycast(ray, out hit) && hit.collider.gameObject.CompareTag("Bourges") && bClicked == true)
+            else if (Input.GetTouch(0).phase == TouchPhase.Began && Physics.Raycast(ray, out hit) && hit.collider.gameObject.CompareTag("Bourges") && bClicked == true)
             {
                 bClicked = false;
                 selectNo = 0;
-                labelBG.SetActive(false);
-                label.text = "";
-
                 foreach (GameObject go in ET)
                 {
                     if (go.activeSelf == false)
@@ -252,16 +230,13 @@ public class ObjectSelect : MonoBehaviour
                         go.SetActive(true);
                     }
                 }
-                /*GameObject.FindGameObjectWithTag("Eiffel Tower").SetActive(true);
-
-                GameObject.FindGameObjectWithTag("PDG").SetActive(true);
-
-                GameObject.FindGameObjectWithTag("Le Mont").SetActive(true);*/
                 animatorB.Play("B Return");
 
             }
-            if (Physics.Raycast(ray, out hit) && hit.collider.gameObject.CompareTag("Pont du Gard") && pdgClicked == false)
+            if (Input.GetTouch(0).phase == TouchPhase.Began && Physics.Raycast(ray, out hit) && hit.collider.gameObject.CompareTag("Pont du Gard") && pdgClicked == false)
             {
+                //labelBG.SetActive(true);
+                //label.text = hit.transform.tag;
                 pdgClicked = true;
                 selectNo = 4;
                 foreach (GameObject go in ET)
@@ -289,12 +264,12 @@ public class ObjectSelect : MonoBehaviour
                 animatorPDG.Play("PDG Grow");
                 Debug.Log("PDG");
             }
-            else if (Physics.Raycast(ray, out hit) && hit.collider.gameObject.CompareTag("Pont du Gard") && pdgClicked == true)
+            else if (Input.GetTouch(0).phase == TouchPhase.Began && Physics.Raycast(ray, out hit) && hit.collider.gameObject.CompareTag("Pont du Gard") && pdgClicked == true)
             {
                 pdgClicked = false;
                 selectNo = 0;
-                labelBG.SetActive(false);
-                label.text = "";
+                //labelBG.SetActive(false);
+                //label.text = "";
                 foreach (GameObject go in ET)
                 {
                     if (go.activeSelf == false)
@@ -320,8 +295,10 @@ public class ObjectSelect : MonoBehaviour
                 animatorPDG.Play("PDG Return");
 
             }
-            if (Physics.Raycast(ray, out hit) && hit.collider.gameObject.CompareTag("Le Mont-Saint-Michel") && lmClicked == false)
+            if (Input.GetTouch(0).phase == TouchPhase.Began && Physics.Raycast(ray, out hit) && hit.collider.gameObject.CompareTag("Le Mont-Saint-Michel") && lmClicked == false)
             {
+              //  labelBG.SetActive(true);
+              //  label.text = hit.transform.tag;
                 lmClicked = true;
                 selectNo = 5;
                 foreach (GameObject go in ET)
@@ -349,12 +326,12 @@ public class ObjectSelect : MonoBehaviour
                 animatorLM.Play("LM Grow");
                 Debug.Log("LM");
             }
-            else if (Physics.Raycast(ray, out hit) && hit.collider.gameObject.CompareTag("Le Mont-Saint-Michel") && lmClicked == true)
+            else if (Input.GetTouch(0).phase == TouchPhase.Began && Physics.Raycast(ray, out hit) && hit.collider.gameObject.CompareTag("Le Mont-Saint-Michel") && lmClicked == true)
             {
                 lmClicked = false;
                 selectNo = 0;
-                labelBG.SetActive(false);
-                label.text = "";
+               // labelBG.SetActive(false);
+               // label.text = "";
                 foreach (GameObject go in ET)
                 {
                     if (go.activeSelf == false)
@@ -651,7 +628,7 @@ public class ObjectSelect : MonoBehaviour
            }
        */
     }
-}
+
 /*IEnumerator DeactivateObjs()
 {
     GameObject.FindGameObjectWithTag("Bourges").SetActive(false);

@@ -1,33 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-
-    }
-
-    private static SoundManager instance = null;
-    public static SoundManager Instance
-    {
-        get { return instance; }
-    }
-
-    void Awake()
-    {
- 
-        if (instance != null && instance !=this)
+        GameObject [] objects = GameObject.FindGameObjectsWithTag("Music");
+        if (objects.Length > 1)
         {
             Destroy(this.gameObject);
-            return;
-        }
-        else
-        {
-            instance = this;
         }
         DontDestroyOnLoad(this.gameObject);
+    }
+    private void Update()
+    {
+        if(SceneManager.GetActiveScene().buildIndex == 2 || SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            this.gameObject.GetComponent<AudioSource>().Pause();
+        }
+        else{
+            this.gameObject.GetComponent<AudioSource>().UnPause();
+        }
     }
 }

@@ -13,7 +13,7 @@ public class ShowInfo : MonoBehaviour
     public GameObject Panel3;
     public GameObject Panel4;
     public GameObject Panel5;
-    
+    [SerializeField] Sprite[] infoSprites;
     public ObjectSelect OSRef;
     //public GameObject Label;
     //bool isClicked;
@@ -21,21 +21,22 @@ public class ShowInfo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      
-       // Info = GameObject.Find("InfoText");
-       // Info2 = GameObject.Find("InfoText2");
-       // Info.SetActive(false);
-       // Info2.SetActive(false);
-       // InfoBG = GameObject.Find("InfoBGText");
-       // InfoBG.SetActive(false);
-      //isClicked = false;
+        
+        // Info = GameObject.Find("InfoText");
+        // Info2 = GameObject.Find("InfoText2");
+        // Info.SetActive(false);
+        // Info2.SetActive(false);
+        // InfoBG = GameObject.Find("InfoBGText");
+        // InfoBG.SetActive(false);
+        //isClicked = false;
     }
 
     public void OpenPanel()
     {
-        
-   if(Panel != null&& OSRef.selectNo==1)
+       
+        if (OSRef.selectNo==1)
         {
+            gameObject.GetComponent<Image>().sprite = infoSprites[1];
             if (Panel2.activeSelf == true)
             {
                 Panel2.SetActive(false);
@@ -79,6 +80,7 @@ public class ShowInfo : MonoBehaviour
         }*/
      else   if (Panel3 != null && OSRef.selectNo==3)
         {
+            gameObject.GetComponent<Image>().sprite = infoSprites[1];
             if (Panel.activeSelf == true)
             {
                 Panel.SetActive(false);
@@ -100,6 +102,7 @@ public class ShowInfo : MonoBehaviour
         }
     else if (Panel4 != null && OSRef.selectNo==4)
         {
+            gameObject.GetComponent<Image>().sprite = infoSprites[1];
             if (Panel.activeSelf == true)
             {
                 Panel.SetActive(false);
@@ -121,6 +124,7 @@ public class ShowInfo : MonoBehaviour
         }
       else if (Panel5 != null && OSRef.selectNo==5)
         {
+            gameObject.GetComponent<Image>().sprite = infoSprites[1];
             if (Panel.activeSelf == true)
             {
                 Panel.SetActive(false);
@@ -208,6 +212,9 @@ public class ShowInfo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Panel.activeSelf == false && Panel2.activeSelf == false && Panel3.activeSelf == false && Panel4.activeSelf == false && Panel5.activeSelf == false)
+        {
+            gameObject.GetComponent<Image>().sprite = infoSprites[0];
+        }
     }
 }

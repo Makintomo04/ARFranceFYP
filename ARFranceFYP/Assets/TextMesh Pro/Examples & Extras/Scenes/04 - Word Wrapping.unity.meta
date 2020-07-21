@@ -1,24 +1,3 @@
-fileFormatVersion: 2
-guid: 32ce6e1ebf7158b4183297c7c5df223f
-labels:
-- Mesh
-- Text
-- Rendering
-- TextMesh
-- TextMeshPro
-- Font
-- Dynamic
-- Pro
-- Fonts
-- Advanced
-- GUI
-- Scene
-- Styles
-- Style
-- Layout
-- Atlas
-- Kerning
-DefaultImporter:
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:4933455e4aa2c2f1be80536883b1113edfb883cf0aa60114384363f0a7286c72
+size 316

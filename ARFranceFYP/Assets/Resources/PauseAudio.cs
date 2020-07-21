@@ -7,18 +7,20 @@ public class PauseAudio : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 2){
-            SoundManager.Instance.gameObject.GetComponent<AudioSource>().Pause();
-        }
-        else
-        {
-            SoundManager.Instance.gameObject.GetComponent<AudioSource>().Play();
-        }
+       
+      
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        /*   if (SceneManager.GetActiveScene().buildIndex == 2 || SceneManager.GetActiveScene().buildIndex == 3)
+           {
+               SoundManager.Instance.gameObject.GetComponent<AudioSource>().Pause();
+           }
+           else
+           {
+               SoundManager.Instance.gameObject.GetComponent<AudioSource>().Play();
+           }*/
     }
 }

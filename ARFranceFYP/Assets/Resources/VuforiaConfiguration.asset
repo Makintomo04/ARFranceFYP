@@ -16,12 +16,12 @@ MonoBehaviour:
     vuforiaLicenseKey: AWj1N1//////AAABmSJgETOQrkrGoLgc2ZiaIZAOtaVHiFWQt2Mz4yj4Ci1jnhhcZ+2S/6D+wn1VVSHRBRkXwBQDVYtQHi9WBozhJ3QQQrutlxIy1GBxL/5oL5z2EEb1qqZLuvaLWFus9NpOPI2jL0Ox8T96Ex2xs78p3kSwYFrNvnJCPnpifHQngbJ56IpeBYYL3RZAuNILw+UkKqacfcQag6aCVgWWgcSBQdOWB0XnbRtw0135yU/3xD0ZThh3s4lb5o6FSpMhocVfwvOLSieKKZzO2bp2nE1qj2PX6yPDyZaLUTNYkUir5SfNr8ZfmySjg1cxwNlOwYgCYeJBuGUhprGNoHlicIFlyitJlCAJvjjrpk5AgaRF17d/
     ufoLicenseKey: QVdidHFJRC8vLy8vQUFBQUtOREEwZ0ZId2s5dG8zcC9BbmFra05CeVM5M3VIWWJvaWd0dXBEU2c5dFJrRmRCM3FJdjA5QlBBaWthd01zMEZsQ25SL0gyNDNBd28zU215QitJREo4akt3SzUzTk5PenBFelFmYUtMcWVUdXBrbjIwQ3haVUI1dExUeTlLQjJyOWhIelV6YTVJdXdjaUFyYXlxVmEzQXpDYTZFeGx6YXd3RUo3MDZFQ0orN29wUWlJTXNwN1lyVjdpZVdHbmFRaTlRbkw1VEhUaDc4T0cyWVpDRHduYlgrQmhxcnFSVGJiTmljN05GNXpRa2VwQVg3Y0hxT3k4MlpTWG1DTDgwdFVucXNzZVpYdXR5SnlkYXQ2VVhyeFM0cXpQQ05iNzh5VEV5d3dPTHlYbFpuL1hxbHRWZWxDZnVITys0a3g3bnMyTkw2YmkyVEJDM0phbUhFNjlHZkwzRHdBM3NvMzFLK25hQ2FWWWNTdExrczY=
     delayedInitialization: 0
-    cameraDeviceModeSetting: -1
+    cameraDeviceModeSetting: -2
     maxSimultaneousImageTargets: 1
     maxSimultaneousObjectTargets: 1
     useDelayedLoadingObjectTargets: 0
     modelTargetRecoWhileExtendedTracked: 0
-    version: 8.6.7
+    version: 8.6.10
     eulaAcceptedVersions: '{"Values":["8.3","8.5","8.6"]}'
     modelTargetMode: 0
   database:
@@ -40,6 +40,6 @@ MonoBehaviour:
     autoInitTracker: 0
     autoStartTracker: 0
   webcam:
-    deviceNameSetInEditor: HP Wide Vision HD Camera
+    deviceNameSetInEditor: EpocCam Camera
     turnOffWebCam: 0
     renderTextureLayer: 30

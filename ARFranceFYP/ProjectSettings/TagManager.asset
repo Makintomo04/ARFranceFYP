@@ -10,6 +10,10 @@ TagManager:
   - Bourges
   - Pont du Gard
   - Le Mont-Saint-Michel
+  - Croissant
+  - Cheese
+  - Steak
+  - Wine
   layers:
   - Default
   - TransparentFX
